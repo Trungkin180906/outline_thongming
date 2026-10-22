@@ -19,6 +19,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+print("FRONTEND CORS ORIGIN CHECK")
+print("https://outline-thongming-frontend.onrender.com")
 
 app.include_router(auth.router, prefix="/api")
 app.include_router(tasks.router, prefix="/api")
